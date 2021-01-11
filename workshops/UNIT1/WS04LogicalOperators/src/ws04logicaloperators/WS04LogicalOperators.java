@@ -71,22 +71,22 @@ public class WS04LogicalOperators {
         p = true;
         q = true;
         
-        System.out.println(" ( " + p + " v " + q + " ) --> " + (p || q));
+        System.out.println(" ( " + p + " v " + q + " ) --> " + (p && q));
         
         p = true;
         q = false;
         
-        System.out.println(" ( " + p + " v " + q + " ) --> " + (p || q));
+        System.out.println(" ( " + p + " v " + q + " ) --> " + (p && q));
         
         p = false;
         q = true;
         
-        System.out.println(" ( " + p + " v " + q + " ) --> " + (p || q));
+        System.out.println(" ( " + p + " v " + q + " ) --> " + (p && q));
         
         p = false;
         q = false;
         
-        System.out.println(" ( " + p + " v " + q + " ) --> " + (p || q));
+        System.out.println(" ( " + p + " v " + q + " ) --> " + (p && q));
     }
     
 }
