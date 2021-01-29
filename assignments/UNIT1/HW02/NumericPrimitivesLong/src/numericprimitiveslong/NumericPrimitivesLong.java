@@ -23,24 +23,19 @@ public class NumericPrimitivesLong {
         long car5;
         long totalcars;
         long average;
-        
+
         car1 = 539;
         car2 = 564;
         car3 = 551;
         car4 = 580;
         car5 = 576;
         totalcars = 5;
-        
-        
+
         average = ((car1 + car2 + car3 + car4 + car5) / totalcars);
-        
-        System.out.println("The average of " + " (" + (car1 + "+" + car2 + " + " + car3 + " + " + car4 + " + " + car5 + ")" + " / " + totalcars) +
-                " Is equal to --> " + average);
-                
-                
-        
-        
-        
+
+        System.out.println("The average of " + " (" + (car1 + "+" + car2 + " + " + car3 + " + " + car4 + " + " + car5 + ")" + " / " + totalcars)
+                + " Is equal to --> " + average);
+
     }
-    
+
 }
