@@ -18,11 +18,13 @@ public class HW09EmbeddedStructures {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("---Embedded Structure---");
-        System.out.println("Programmers:");
-        System.out.println("Pilataxi Kyara - Portero Carla - Ochoa Erick - Villalba Alessio - Yaguana Kevin");
+        System.out.println("||||||||| Embedded Structures||||||||  ");
+        System.out.println(" programmers:\n Ochoa Erick\n"
+                + " Portero Carla\n"
+                + " Pilataxi Kyara\n"
+                + " Villalba Alessio\n"
+                + " Yaguana Kevin\n\n ");
         Scanner scanner = new Scanner(System.in);
-        
         float operand1;
         float operand2;
         float product;
