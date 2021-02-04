@@ -62,7 +62,7 @@ public class WS09Functions {
     public static int g(int x) {
         int y = 0;
 
-        y = x * x;
+        y = x * x + 2 * x + 1;
 
         return y;
     }
