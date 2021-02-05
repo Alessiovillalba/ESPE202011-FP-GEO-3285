@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hw10functions;
+package ws11;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Alessio
  */
-public class HW10Functions {
+public class WS11Refactor {
 
     /**
      * @param args the command line arguments
