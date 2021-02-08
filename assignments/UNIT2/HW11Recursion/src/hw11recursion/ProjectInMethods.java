@@ -9,13 +9,9 @@ package hw11recursion;
  *
  * @author Alessio
  */
-public class HW11ProjectInMethods {
+public class ProjectInMethods {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
     
+    }
+
 }
