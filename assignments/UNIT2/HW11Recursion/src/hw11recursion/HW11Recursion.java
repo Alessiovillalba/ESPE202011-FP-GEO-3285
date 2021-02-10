@@ -18,38 +18,23 @@ public class HW11Recursion {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int mainRivers;
-        int wildlifeReserve;
-        int riversAndReserves;
-
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the amount of rivers -> ");
-        mainRivers = input.nextInt();
-
-        System.out.println("Enter the amount ofwildlifeReserves -> ");
-        wildlifeReserve = input.nextInt();
-
-        ShowTheNumberOfRiversAndReservesOfEcuador(mainRivers, wildlifeReserve);
-    
         System.out.println("Enter how many numbers you want in the sequence --> ");
         int stop = input.nextInt();
- 
-          for(int i = 0; i<stop; i++){
-               System.out.print(printFibonacciSequence(i) + ", ");
-          }
-     }
-
-    public static void ShowTheNumberOfRiversAndReservesOfEcuador(int mainRivers, int wildlifeReserves) {
-        int riversAndReserves;
-        riversAndReserves = mainRivers + wildlifeReserves;
-        System.out.println("the total number of wildlife reserves and main rives of the Ecuador is --> " + riversAndReserves);
+        int number = 0;
+        
+        printFibonacciSequence(number);
+        for (int i = 0; i < stop; i++) {
+            System.out.print(printFibonacciSequence(i) + ", ");
+        }
     }
- 
-     public static int printFibonacciSequence(int number){
-          if(number == 0 || number == 1)
-               return number;
-          else
-               return printFibonacciSequence(number-1) + printFibonacciSequence(number-2);
-     }
- 
+
+    public static int printFibonacciSequence(int number) {
+        if (number == 0 || number == 1) {
+            return number;
+        } else {
+            return printFibonacciSequence(number - 1) + printFibonacciSequence(number - 2);
+        }
+    }
+
 }

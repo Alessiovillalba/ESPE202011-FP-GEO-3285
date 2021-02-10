@@ -1,0 +1,102 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ws12libraries;
+
+/**
+ *
+ * @author Alessio
+ */
+public class WS12Libraries {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        //if we have the Math library
+        //we import and use it
+        float squareRoot = 0.0F;
+        float number = 0.0F;
+        float power = 0.0F;
+        float base = 0.0F;
+        float exponent = 0.0F;
+        float absoluteValue;
+
+        number = 9; // square Root = ? -> 3
+        squareRoot = (float) Math.sqrt(number);
+        System.out.println("the square root of -> " + number + " <- is ->" + squareRoot);
+
+        number = 49; // ? 7
+        squareRoot = (float) Math.sqrt(number);
+        System.out.println("the square root of -> " + number + " <- is ->" + squareRoot);
+
+        number = 5; // ? 2.236
+        squareRoot = (float) Math.sqrt(number);
+        System.out.println("the square root of -> " + number + " <- is ->" + squareRoot);
+
+        base = 3;
+        exponent = 2;
+        //power = 9 ?
+        power = (float) Math.pow(base, exponent);
+        System.out.println("the power of -> " + base + " exponent" + exponent + " is equal to ->" + power);
+
+        power = computePower(base, exponent);
+        System.out.println(base + " ^ " + exponent + " = " + power);
+        base = 2;
+        exponent = 4;
+        //power = 16 ?
+        power = (float) Math.pow(base, exponent);
+        System.out.println("the power of -> " + base + " exponent" + exponent + " is equal to ->" + power);
+
+        base = 78;
+        exponent = 5;
+        //calculator 78^5
+        //2.887.174.368
+        power = (float) Math.pow(base, exponent);
+        System.out.println("the power of -> " + base + " exponent" + exponent + " is equal to ->" + power);
+
+        
+        absoluteValue = getAbsoluteValue(number);
+        number = -5;
+        absoluteValue = getAbsoluteValue(number);
+        System.out.println("absolute value of -> " + number + " is " + absoluteValue);
+        
+        absoluteValue = getAbsoluteValue(number);
+        number = 5;
+        absoluteValue = getAbsoluteValue(number);
+        System.out.println("absolute value of -> " + number + " is " + absoluteValue);
+        //if we dont have the library, what would we do?
+        //we should create the feature, the library
+        //our own algorithm to compute the square root
+    }
+
+    public static float computePower(float base, float exponent) {
+        float power;
+        power = 1.0F;
+
+        for (int i = 1; i <= (int) exponent; i++);
+        {
+            power = base * base;
+        }
+        return power;
+    }
+
+    public static float getAbsoluteValue(float number) {
+        if(number < 0){
+            return -number;
+        }else{
+            return number;
+        }
+//        if (number < 0) {
+//            number = number * -1;
+//            return number;
+//        }
+//        return number;
+    
+    }
+
+}
+

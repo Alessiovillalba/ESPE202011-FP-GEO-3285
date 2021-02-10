@@ -81,11 +81,6 @@ public class QGISProject {
         y = calculateThePopulationPercent(Currentvariable, Oldvariable, valor);
         System.out.println(" percentage of" + y + "is equal to ->" + y);
 
-        int number = 4;
-        int fact = 0;
-        fact = printFactorial(number);
-        System.out.println("factorial of " + number + " is equal to -> " + fact);
-
         System.out.println("Enter the amount of rivers -> ");
         mainRivers = input.nextInt();
 
@@ -129,27 +124,11 @@ public class QGISProject {
         return y;
     }
 
-    public static int printFactorial(int n) {
-        if (n < 0) {
-            return -1;
-        } else {
-            if (n == 0) {
-                return 1;
-            } else {
-                return (n * printFactorial(n - 1));
-                
-            }
-            
-    
-    }
-
-}
     public static int ShowTheNumberOfRiversAndReservesOfEcuador(int mainRivers, int wildlifeReserves) {
-        
+
         int riversAndReserves;
         riversAndReserves = mainRivers + wildlifeReserves;
         System.out.println("the total number of wildlife reserves and main rives of the Ecuador is --> " + riversAndReserves);
         return riversAndReserves;
     }
-}    
-
+}
