@@ -104,7 +104,7 @@ public class HW12LibrariesTaxes {
 
     public static float computeForeingExchangeOutflow(float price, float tax, float option) {
         float total = 0.0F;
-        System.out.print("Enter the kind of pay (1) for credit or debit card pays -> /n (2) for online pays--> ");
+        System.out.print("Enter the kind of pay: \n(1) for credit or debit card pays -> \n(2) for online pays--> ");
         Scanner scanner = new Scanner(System.in);
         option = (float) scanner.nextInt();
         scanner.nextLine();
