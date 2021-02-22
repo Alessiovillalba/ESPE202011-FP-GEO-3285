@@ -16,7 +16,7 @@ public class ArrayQuiz {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {{
         // TODO code application logic here
         System.out.println("---CANDIDATES--- ");
         String[] candidates = {"Arauz", "Perez", "Lasso", "Hervas"};
@@ -31,4 +31,37 @@ public class ArrayQuiz {
 
         }
     }
+    System.out.println("------------Correction------------");
+    int totalOfCandidates = 0;
+        String[] candidates;
+        float[] votesPercents;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Please enter the amount of candidates -> ");
+        totalOfCandidates = scanner.nextInt();
+
+        candidates = new String[totalOfCandidates];
+        votesPercents = new float[totalOfCandidates];
+        
+        scanner.nextLine();        
+        
+
+        for (int i = 0; i < totalOfCandidates; i++) {
+            scanner.nextLine();
+            System.out.print("Please enter the name of candidate number " + (i+1) + " ->");
+            candidates[i] = scanner.nextLine();            
+            System.out.print("Please enter " + candidates[i] + " vote percent ->");
+            votesPercents[i] = scanner.nextFloat();
+            scanner.nextLine();
+        }
+            System.out.println("candidate   ->  \t      vote percent ");        
+
+        for (int i = 0; i < totalOfCandidates; i++) {
+            System.out.println(candidates[i] + "\t" + votesPercents[i]);
+        }
+
+    }
+
+
 }
