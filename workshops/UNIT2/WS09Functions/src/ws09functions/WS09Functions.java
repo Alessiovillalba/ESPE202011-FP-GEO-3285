@@ -21,6 +21,8 @@ public class WS09Functions {
         float quotient = 0;
         int x = 0;
         int y = 0;
+        
+        System.out.println("AUTHOR: ALESSIO VILLALBA");
 
         //Call to divideTwoNumbers() function
         quotient = divideTwoNumbers(dividend, divisor);
