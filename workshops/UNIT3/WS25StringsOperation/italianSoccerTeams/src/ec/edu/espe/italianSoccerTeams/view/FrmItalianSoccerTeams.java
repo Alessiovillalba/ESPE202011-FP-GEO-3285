@@ -148,15 +148,15 @@ public class FrmItalianSoccerTeams extends javax.swing.JFrame {
         int foundationYear;
         String europeanClassification;
         String data;
-        
+
         teamName = txtTeamName.getText();
         stadium = txtStadium.getText();
         city = txtCity.getText();
         foundationYear = Integer.parseInt(txtFoundationYear.getText());
         europeanClassification = cmbEuropeanClassification.getSelectedItem().toString();
-        
+
         data = teamName + ", " + stadium + ", " + city + ", " + foundationYear + ", " + europeanClassification;
-        
+
         JOptionPane.showMessageDialog(null, data);
         
     }//GEN-LAST:event_btnSaveActionPerformed
