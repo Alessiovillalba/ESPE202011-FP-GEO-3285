@@ -145,18 +145,18 @@ public class FrmSearchingForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        int[] numbers = new int[6];
-        for(int i=0;i < numbers.length;i++){
-            numbers[i] = Integer.parseInt(JOptionPane.showInputDialog((i+1)+ "º Number :",0));
+        int[] introducedNumbers = new int[6];
+        for(int i=0;i < introducedNumbers.length;i++){
+            introducedNumbers[i] = Integer.parseInt(JOptionPane.showInputDialog((i+1)+ "º Number :",0));
         }
         String Array ="unordered numbers \n";
-        for(int i=0;i < numbers.length;i++){
-            Array = Array + numbers[i] + "    ";
+        for(int i=0;i < introducedNumbers.length;i++){
+            Array = Array + introducedNumbers[i] + "    ";
         }
-         printNumbers(numbers);
+         printNumbers(introducedNumbers);
         Array = Array  + "\nOrdered numbers ";
-        for(int i=0;i < numbers.length;i++){
-                Array = Array + "\n" +  numbers[i] ;
+        for(int i=0;i < introducedNumbers.length;i++){
+                Array = Array + "\n" +  introducedNumbers[i] ;
             
         }
         JOptionPane.showMessageDialog(null,Array);
