@@ -1,0 +1,4 @@
+FIAT , Spider,1200,260,false
+Renault , R.S. 2027,1350,320,false
+Ferrari , Enzo Ferrari Auto,651,350,false
+Lamborghini  , Terzo Millennio,838,400,false

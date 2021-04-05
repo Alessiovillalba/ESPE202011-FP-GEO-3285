@@ -14,8 +14,8 @@ import java.io.IOException;
  * @author Alessio
  */
 public class FileManager {
-
-    public static boolean createFile(String fileName){
+    
+    public static boolean createFile(String fileName) {
         boolean created = false;
         try {
             File file = new File(fileName + ".txt");
@@ -33,17 +33,15 @@ public class FileManager {
             created = false;
         }
         return created;
-
     }
-
     public static boolean save(String data, String fileName) {
         boolean saved = false;
 
         createFile(fileName);
 
         try {
-            FileWriter myWrite = new FileWriter(fileName + ".txt", true);
-            myWrite.write(System.getProperty("line.separator") + data);
+            FileWriter myWrite = new FileWriter(fileName + ".csv", true);
+            myWrite.write(data + System.getProperty("line.separator"));
             myWrite.close();
             System.out.println("a new record of " + fileName + " was saved");
             saved = true;
@@ -55,5 +53,30 @@ public class FileManager {
         return saved;
     }
 
+    boolean saved = false;
+
+        createFile(fileName);
+
+        try {
+            FileWriter myWrite = new FileWriter(fileName + ".csv", true);
+            myWrite.write(data + System.getProperty("line.separator"));
+            myWrite.close();
+            System.out.println("a new record of " + fileName + " was saved");
+            saved = true;
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            saved = false;
+        }
+
+        return saved;
+    }
+
+    public static void save(String data, String cars) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public static void readLines(String cars, String[] data) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
-                                                
